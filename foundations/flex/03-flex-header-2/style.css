@@ -46,3 +46,29 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* here is the solution */
+
+.header,
+.links,
+.right-side,
+.left-side{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header{
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.links{
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  white-space: nowrap;
+}
